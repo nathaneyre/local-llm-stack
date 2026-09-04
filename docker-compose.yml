@@ -5,6 +5,7 @@ services:
     restart: unless-stopped
     environment:
       - OLLAMA_KV_CACHE_TYPE=q8_0
+      - OLLAMA_CONTEXT_LENGTH=32768
     ports:
       - "11434:11434"
     volumes:
